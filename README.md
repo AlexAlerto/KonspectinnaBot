@@ -2,7 +2,6 @@
 
 ## Description
 
----
 Konspectinna - Is telegram bot for students (and beyond) to view educational files of their educational stream.
 
 This repository contains the entire main part of the project.
@@ -11,7 +10,6 @@ This repository contains the entire main part of the project.
 
 ## Local access
 
----
 For local launch and development you will need:
 
 - [Java 17+](https://www.oracle.com/java/)
