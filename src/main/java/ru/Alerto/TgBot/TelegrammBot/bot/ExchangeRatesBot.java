@@ -110,12 +110,13 @@ public class ExchangeRatesBot extends TelegramLongPollingBot {
             deleteMessage(update.getCallbackQuery().getMessage().getChatId(), update.getCallbackQuery().getMessage().getMessageId());
 
             String callBackData = update.getCallbackQuery().getData();
-            File directory = new File(filesRepository.findById(Long.valueOf(callBackData)).orElseThrow().getPath());
 
             if(callBackData.equals("Main")){
                 startCommand(chatId);
                 return;
             }
+
+            File directory = new File(filesRepository.findById(Long.valueOf(callBackData)).orElseThrow().getPath());
 
             if(directory.isDirectory()){
                 SendLog("@" + update.getCallbackQuery().getFrom().getUserName() + " перешёл в папку " + filesRepository.findById(Long.valueOf(update.getCallbackQuery().getData())).orElseThrow().getPath().replace("./", "").replace("/", " -> "));
@@ -288,6 +289,6 @@ public class ExchangeRatesBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "Konspectinna-proxy";
+        return "Konspectinna";
     }
 }
