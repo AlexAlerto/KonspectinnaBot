@@ -7,7 +7,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
-import ru.Alerto.TgBot.TelegrammBot.bot.ExchangeRatesBot;
+import ru.Alerto.TgBot.TelegrammBot.bot.KonspectinnaBot;
 
 @Configuration
 @EnableCaching
@@ -15,9 +15,9 @@ import ru.Alerto.TgBot.TelegrammBot.bot.ExchangeRatesBot;
 public class ExchangeRatesBotConfiguration {
 
     @Bean
-    public TelegramBotsApi telegramBotsApi(ExchangeRatesBot exchangeRatesBot) throws TelegramApiException {
+    public TelegramBotsApi telegramBotsApi(KonspectinnaBot konspectinnaBot) throws TelegramApiException {
         var api = new TelegramBotsApi(DefaultBotSession.class);
-        api.registerBot(exchangeRatesBot);
+        api.registerBot(konspectinnaBot);
         return api;
     }
 

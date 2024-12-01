@@ -1,0 +1,16 @@
+FAQ
+
+What is Konspectinna?
+Konspectinna is a bot that allows you to store and conveniently view lecture notes, tutorials and labs of your course.
+
+What does the name at the end of the file name mean?
+This is the pseudonym of the person who shared his synopsis. This way you can know whose notes you understand better.
+
+How to donate money to the developers of Konspectinna?))
+It's not difficult, here's the link:)
+https://www.tbank.ru/cf/8j4WJ7Klp1r
+
+Is Konspectinna legal?
+Absolutely. Information about your course of study is available only to your course of study, and each person is carefully selected by the administration.
+
+Konspectinna is only getting better every day, wait for updates! <3
