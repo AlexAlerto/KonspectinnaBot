@@ -1,0 +1,11 @@
+/.gradle/
+/.idea/
+/gradle/
+/gradlew
+/gradlew.bat
+/src/main/resources/application.properties
+/files/
+/settings.gradle
+/prometheus.yml
+/info.txt
+/build
